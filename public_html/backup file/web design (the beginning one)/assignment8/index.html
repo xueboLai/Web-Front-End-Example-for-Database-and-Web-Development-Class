@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
+  
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+	
+
+  
+  
+  <script>
+  	  $( function() {
+    $( "#menu" ).menu();
+  } );
+  </script>
+  <style>
+  body{
+
+  background:url("pics/whole1.png") no-repeat scroll center;
+  background-position:700px 200px;  }
+  
+
+  .ui-menu { width: 150px; }
+
+  
+
+  
+  
+  </style>
+<script>
+  $(document).ready(function(){
+	
+	
+  
+     $("#Up").click(function() {
+
+          $(".component").animate({
+		  
+                 left: "-=0",
+                 top: "-=30"}, 
+                 200);
+         }); /*end up .click */
+	 $("#Down").click(function() {
+
+          $(".component").animate({
+		  
+                 left: "-=0",
+                 top: "+=30"}, 
+                 200);
+         }); /*end down .click */
+		 
+	$("#Left").click(function() {
+
+          $(".component").animate({
+		  
+                 left: "-=30",
+                 top: "+=0"}, 
+                 200);
+         }); /*end down .click */
+		 
+	$("#Right").click(function() {
+
+          $(".component").animate({
+		  
+                 left: "+=30",
+                 top: "+=0"}, 
+                 200);
+         }); /*end down .click */
+		 
+
+		 		 	
+  
+
+});   /* end #document ready function */
+</script>
+  
+
+
+
+
+
+
+</script>
+</head>
+<body>
+<h1>New York City</h1>
+<ul id="menu">
+  <li class="ui-state-disabled"><div>There is nothing here</div></li>
+
+  <li><div><a href = "../index.html">Back to Home</a></div></li>
+  <li><div>Puzzle example(2 inside)</div>
+    <ul>
+      <li ><div><a href = "index.html">Button-control Puzzle</a></div></li>
+      <li ><div><a href = "Draggable_Puzzle.html">Draggable Puzzle</a></div></li>
+    </ul>
+  </ul>
+
+
+
+
+
+
+<img   src="pics/1.png" style="position: absolute; top:200px; left:700px;">
+<img   src="pics/2.png" style="position: absolute; top:326px; left:700px;">
+<img   src="pics/3.png" style="position: absolute; top:540px; left:700px;">
+<img   src="pics/4.png" style="position: absolute; top:200px; left:998px;">
+<img  class="component" src="pics/5.png" style="position: absolute; top:215px; left:248px;">
+<img   src="pics/6.png" style="position: absolute; top:580px; left:999px;">
+<img   src="pics/7.png" style="position: absolute; top:200px; left:1305px;">
+<img   src="pics/8.png" style="position: absolute; top:446px; left:1305px;">
+
+
+<input type = "button" id = "Up" value = "UP" style = "margin-top:20px;">
+<input type = "button" id = "Down" value = "DOWN" style = "margin-top:20px;">
+<input type = "button" id = "Left" value = "LEFT" style = "margin-top:20px;">
+<input type = "button" id = "Right" value = "RIGHT" style = "margin-top:20px;">
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

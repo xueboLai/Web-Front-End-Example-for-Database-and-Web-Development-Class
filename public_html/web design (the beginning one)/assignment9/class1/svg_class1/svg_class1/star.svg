@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" 
+     "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" 
+ xmlns:xlink="http://www.w3.org/1999/xlink" 
+   width="193" height="193" xml:space="preserve">
+
+<rect id="roundedRectangle" stroke="rgb(0, 0, 0)" 
+  fill="rgb(90, 200, 226)" x="1.5" y="2.5" 
+  width="190" height="190" rx="10" />
+
+<polygon id="star3" stroke="none" fill="rgb(84, 106, 114)" 
+ points="95.5,25 119,72 170.5,79.5 133,116 142,168 
+ 95.5,143 49.5,167.5 58,116 20.5,79.5 72.5,72 	"/>
+
+<polygon id="star4" stroke="none" fill="rgb(255, 255, 255)" 
+ points="95.5,51 111,82 145.5,87.5 120.5,111.5 126.5,146 
+ 95.5,130 65,146 70.5,111.5 45.5,87.5 80.5,82 	"/>
+
+<circle fill="#FFFF13" stroke="#3545FF" stroke-width="2" 
+      cx="96" cy="100" r="10"/>
+</svg>

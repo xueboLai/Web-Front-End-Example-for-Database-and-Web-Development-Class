@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="200"  xml:space="preserve">
+
+<!--
+ Drawing cubic Bezier curves is done using the C and c commands. 
+ Cubic Bezier curves are like quadratic Bezier curves except 
+ they have two control points instead of one. 
+ Like with lines, the uppercase command (C) uses absolute coordinates 
+ for its endpoint, where the lowercase command (c) uses relative coordinates 
+ (relative to the start point). Here is an example: 
+-->
+ <path d="M50,50 C75,180 125,0 150,50"
+      style="stroke: #006666; fill:none;"/> 	
+
+</svg>

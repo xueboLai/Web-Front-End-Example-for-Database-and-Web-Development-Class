@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Menu - Default functionality</title>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
+  
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#menu" ).menu();
+  } );
+  </script>
+  <style>
+  .ui-menu { width: 150px; }
+  </style>
+</head>
+<body>
+ 
+<ul id="menu">
+  <li class="ui-state-disabled"><div>There is nothing here</div></li>
+
+  <li><div><a href = "../index.html">Back to Home</a></div></li>
+  <li><div>Puzzle example(2 inside)</div>
+    <ul>
+      <li ><div><a href = "index.html">Button-control Puzzle</a></div></li>
+      <li ><div><a href = "">Draggable Puzzle</a></div></li>
+    </ul>
+  </ul>
+ 
+ 
+ 
+</body>
+</html>

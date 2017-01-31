@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" 
+xmlns:xlink="http://www.w3.org/1999/xlink" 
+width="300" height="300"  xml:space="preserve">
+
+<!--
+ Markers are created using the <marker> element. 
+ The <marker> element has to be nested inside a <defs> element. 
+ The <defs> element normally holds a set of reusable definitions for the SVG image. 
+-->
+
+
+    <rect x="50" y="50" height="110" width="110"
+          style="stroke:#ff0000; fill: #ccccff"
+          transform="translate(30,100) rotate(45 50 50)"
+            >
+    </rect>
+    <text x="70" y="100"
+          transform="translate(30,100) rotate(45 50 50)"
+    >Hello World</text>
+
+
+
+</svg>

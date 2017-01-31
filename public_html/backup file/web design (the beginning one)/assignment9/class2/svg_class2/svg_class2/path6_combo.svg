@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="200"  xml:space="preserve">
+
+<!--
+ The <path> element has a shortcut command for closing the path, 
+ meaning drawing a line from the last point back to the first point. 
+ The command is Z (or z - there is no difference between the uppercase 
+ and lowercase close path command). 
+-->
+<path d="M50,50 L100,50 L100,100 Z"
+    style="stroke: #006666; fill:red;"/>	
+
+</svg>

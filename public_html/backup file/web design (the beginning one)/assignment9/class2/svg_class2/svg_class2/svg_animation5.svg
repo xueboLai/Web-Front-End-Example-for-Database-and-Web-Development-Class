@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" 
+xmlns:xlink="http://www.w3.org/1999/xlink" 
+width="300" height="200"  xml:space="preserve">
+
+<!-- ANIMATE TRANSFORM
+The <animateTransform element can animate the transform attribute of a shape. 
+The <animate> element cannot do that. 
+ 
+-->
+
+<rect x="20" y="20" width="100" height="40"
+    style="stroke: #ff00ff; fill:none;" >
+  <animateTransform attributeName="transform"
+                    type="rotate"
+                    from="0 100 100" to="360 100 100"
+                    begin="0s" dur="10s"
+                    repeatCount="indefinite"
+          />
+</rect>  
+
+
+</svg>

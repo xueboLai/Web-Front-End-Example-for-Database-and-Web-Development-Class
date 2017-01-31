@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!-- saved from url=(0112)http://cs.nyu.edu/courses/summer16/CSCI-UA.0004-002/assign8_jQuery_summer2016/examples/jquery_example6_menu.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>jQuery UI Menu - Default functionality</title>
+  <link rel="stylesheet" href="./1_files/jquery-ui.css">
+  <script src="./1_files/jquery-1.10.2.js"></script>
+  <script src="./1_files/jquery-ui.js"></script>
+  <link rel="stylesheet" href="./1_files/style.css"> 
+  <style>
+  .ui-menu { width: 150px; }
+  </style>
+</head>
+<body>
+ <h1>New York Guide</h1>
+<ul id="ny_menu" class="ui-menu ui-widget ui-widget-content" role="menu" tabindex="0" aria-activedescendant="ui-id-10">
+  <li class="ui-state-disabled ui-menu-item" id="ui-id-1" tabindex="-1" role="menuitem" aria-disabled="true">Statue of Liberty	</li>
+  <li class="ui-menu-item" id="ui-id-2" tabindex="-1" role="menuitem"><a href="http://www.esbnyc.com/" target="_blank">Empire State Building</a></li>  
+  <li aria-haspopup="true" class="ui-menu-item" id="ui-id-3" tabindex="-1" role="menuitem"><span class="ui-menu-icon ui-icon ui-icon-carat-1-e"></span>Parks
+    <ul class="ui-menu ui-widget ui-widget-content ui-front" role="menu" aria-hidden="true" aria-expanded="false" style="display: none;">
+      <li class="ui-state-disabled ui-menu-item" id="ui-id-4" tabindex="-1" role="menuitem" aria-disabled="true">Gramercy Park</li>
+      <li class="ui-menu-item" id="ui-id-5" tabindex="-1" role="menuitem"><a href="http://centralparknyc.org/" target="_blank">Central Park</a></li>
+      <li class="ui-menu-item" id="ui-id-6" tabindex="-1" role="menuitem"><a href="http://www.nycgovparks.org/parks/washington-square-park" target="_blank">Washington Square Park</a> </li>
+    </ul>
+  </li>
+  <li class="ui-menu-item" id="ui-id-7" tabindex="-1" role="menuitem"><a href="http://www.metopera.org/" target="_blank">Met Opera</a></li>
+  <li aria-haspopup="true" class="ui-menu-item ui-state-active" id="ui-id-8" tabindex="-1" role="menuitem"><span class="ui-menu-icon ui-icon ui-icon-carat-1-e"></span>NYU
+    <ul class="ui-menu ui-widget ui-widget-content ui-front" role="menu" aria-expanded="true" style="display: block; top: -0.666656px; left: 150.333px;">
+      <li aria-haspopup="true" class="ui-menu-item ui-state-active" id="ui-id-9" tabindex="-1" role="menuitem"><span class="ui-menu-icon ui-icon ui-icon-carat-1-e"></span>Courant
+        <ul class="ui-menu ui-widget ui-widget-content ui-front" role="menu" aria-expanded="true" style="display: block; top: -0.666672px; left: 150.333px;">
+          <li class="ui-menu-item" id="ui-id-10" tabindex="-1" role="menuitem"><a href="http://cs.nyu.edu/" target="_blank">Comp Sci</a></li>
+          <li class="ui-menu-item" id="ui-id-11" tabindex="-1" role="menuitem"><a href="http://math.nyu.edu/" target="_blank">Math</a></li>
+          <li class="ui-menu-item" id="ui-id-12" tabindex="-1" role="menuitem"><a href="http://cims.nyu.edu/" target="_blank">CIMS</a></li>
+        </ul>
+      </li>
+      <li aria-haspopup="true" class="ui-menu-item" id="ui-id-13" tabindex="-1" role="menuitem"><span class="ui-menu-icon ui-icon ui-icon-carat-1-e"></span>Tisch
+        <ul class="ui-menu ui-widget ui-widget-content ui-front" role="menu" aria-expanded="false" style="display: none; top: -0.666656px; left: 150.333px;" aria-hidden="true">
+          <li class="ui-menu-item" id="ui-id-14" tabindex="-1" role="menuitem"><a href="http://tisch.nyu.edu/drama" target="_blank">Drama</a></li>
+          <li class="ui-menu-item" id="ui-id-15" tabindex="-1" role="menuitem"><a href="http://tisch.nyu.edu/film-tv" target="_blank">Film-TV</a></li>
+          <li class="ui-menu-item" id="ui-id-16" tabindex="-1" role="menuitem"><a href="http://tisch.nyu.edu/dance" target="_blank">Dance</a></li>
+          <li class="ui-menu-item" id="ui-id-17" tabindex="-1" role="menuitem"><a href="http://tisch.nyu.edu/clive-davis-institute" target="_blank">Clive Davis</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li class="ui-state-disabled ui-menu-item" id="ui-id-18" tabindex="-1" role="menuitem" aria-disabled="true">Columbia</li>
+</ul>
+ 
+  <script>
+  
+    $( "#ny_menu" ).menu();
+ 
+  </script>
+
+</body></html>

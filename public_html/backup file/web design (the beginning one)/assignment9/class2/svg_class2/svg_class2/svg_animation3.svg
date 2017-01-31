@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" 
+xmlns:xlink="http://www.w3.org/1999/xlink" 
+width="500" height="200"  xml:space="preserve">
+
+<!-- ANIMATE
+ his example animates the cx attribute of the <circle> element from a value of 30 
+ (the from attribute) to a value of 479 (the to attribute). 
+ The animation starts at 0 seconds (the begin attribute) and has a duration of 5 seconds 
+ (the dur attribute).
+
+When the animation is finished the animated attribute is set back to its original value 
+(the fill="remove" attribute setting). If you wanted the animated attribute to keep 
+the to-value of the animation, set the fill attribute to freeze. 
+The animation repeats indefinitely (the repeatCount attribute). 
+ 
+-->
+
+<circle cx="30" cy="30" r="25" style="stroke: none; fill: #0000ff;">
+    <animate attributeName="cx" attributeType="XML"
+             from="30"  to="470"
+             begin="2s" dur="4s"
+             fill="remove" repeatCount="indefinite"/>
+
+</circle>
+
+
+
+</svg>

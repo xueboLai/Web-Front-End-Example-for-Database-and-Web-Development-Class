@@ -1,0 +1,11 @@
+				body{background-image: url(Great_Wall.jpg); background-repeat:repeat-y;}
+				
+				h1{font-family: "Times New Roman", Times, serif;font-size:50px;text-align:center; color:#B63F24}
+				
+				.subtitle{font-family: "Times New Roman", Times, serif;font-size:40; color = "#E35F34"; text-align = center; }
+				.biggest_class{font-family:Arial, Helvetica, sans-serif;margin-left:200px;margin-right:200px;background-color:#FFF9D2}
+				.list{margin-left:50px;}
+				p{border:1px solid navy; font-family:Arial, Helvetica, sans-serif;font-style: italic;font-size:12px; margin-left:50px;width:500px;margin-right:20px;text-align:justify;}
+				h6{ font-family:Arial, Helvetica, sans-serif;font-style: italic;margin-left:1180px;font-size:15px;}
+				a:hover, a:active{color:#BB3B69;}
+				a:visited{color:navy;}

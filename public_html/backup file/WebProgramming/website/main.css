@@ -1,0 +1,204 @@
+
+
+.col-1 {
+		width: 10%;
+		box-sizing: border-box;
+		padding: 10%;
+		float: left;
+		}
+
+.col-2 {
+		width: 18%;
+		box-sizing: border-box;
+		float: left;
+		padding: 10%;
+		}
+		
+.col-3 {	
+		box-sizing: border-box;
+		width: 29%;
+		/*border-style: solid;
+        border-width: 3px;*/
+		float:left;
+		padding:1%;
+		
+		}
+		
+.col-4 {
+		width: 40%;
+		border-style: solid;
+        border-width: 3px;
+		box-sizing: border-box;
+		
+		}
+		
+.col-5 {
+		width: 50%;
+		box-sizing: border-box;
+		float: left;
+		padding: 10%;
+		}
+		
+.col-6 {
+		width: 60%;
+		box-sizing: border-box;
+		float: right;
+		
+		}
+		
+.col-7 {
+		width: 70%;
+		box-sizing: border-box;
+		float: right;
+	
+		}
+		
+.col-8 {
+		width: 80%;
+		box-sizing: border-box;
+		float: left;
+		padding: 10%;
+		}
+		
+.col-9 {
+		width: 90%;
+		box-sizing: border-box;
+		float: left;
+		padding: 10%;
+		}
+
+.col-10 {
+		width: 100%;
+		box-sizing: border-box;
+		float: left;
+		padding: 10%;
+		}
+		
+body{
+		background-image:url("pic/grass.jpg");}
+figure{
+		background-color:white;}
+nav{		
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		width:100%;
+		height:6%;
+		background-color:black;
+
+		}
+div.insideNav{
+		color:white;
+		font-family:"Times New Roman", Georgia, Serif;
+		font-size:1.6em;
+		line-height:1.5em;
+		}
+.navSelection{
+		color:#bdbbaf;
+		margin-left:5%;
+		}
+.head1{
+
+		text-align:center;
+		font-size:45px;
+		color:#FDCF53;
+		width:100%;
+		}
+#firstElement{
+		color:#bdbbaf;
+		margin-left:23%;
+		}
+#firstElement:hover   {color:white; background-color:transparent; text-decoration:none;}
+.navSelection:hover   {color:white; background-color:transparent; text-decoration:none;}
+#firstElement:link   {text-decoration:none;}
+.navSelection:link   {text-decoration:none;}
+
+
+a:visited {color:white; background-color:transparent; text-decoration:none;}
+
+a:active  {color:white; background-color:transparent; text-decoration:none;}
+
+.main-part{
+		height:2070px;
+		box-sizing: border-box;
+		margin-left:10%;
+		margin-right:10%;
+		background-color:#F5F4EF;
+		/*need to get rid of*/
+		border-style: solid;
+		border-width: 1px;
+		color:black;
+		font-family:"Times New Roman", Georgia, Serif;
+/*		font-size:1.6em;
+		line-height:1.5em;*/
+		}
+		
+#left{	box-sizing: border-box;
+		
+		padding: 0;
+		
+		}
+ul.left-nav {list-style-type: none;
+			margin-left: 3%;
+			margin-right: 5%;
+			
+			}
+
+li.leftH{
+		box-sizing: border-box;
+		margin-top:10px;
+		margin-bottom:10px;
+		border: 1px solid white;
+		border-radius: 8px;
+		text-align:center;
+		font-size:30px;
+		
+		height:55px;
+		background-color:#AFF590;
+		
+		}
+.leftH:link {color:white; text-decoration:none}
+.leftH:hover {color:white; background-color:#52B226; text-decoration:none;}
+a.trial:link    {color:white;  text-decoration:none;margin-top:15px;}
+a.trial:hover   {color:white; background-color:#52B226; text-decoration:none;margin-top:15px;}
+#right{	box-sizing: border-box;
+		margin-right: 5%;
+		border: 1px solid black;
+		box-sizing: border-box;
+		
+		}
+img{width:100%;
+	height:100%;}
+.subtitle{
+		text-align:center;
+		
+		color:black;
+		width:100%;
+}
+
+p{
+	color:black;
+	font-size:20px;
+	line-height:1.5em;
+	text-align:left;
+	text-align:justify;
+}
+
+form.abc{
+	color:blue;
+	
+}
+selection{
+font-size:18px;
+	}
+textarea{
+text-align:justify;
+}
+checkbox{
+font-family:"Times New Roman", Georgia, Serif;
+}
+radio{
+color:red;}
+
+		

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" 
+xmlns:xlink="http://www.w3.org/1999/xlink" 
+width="500" height="200"  xml:space="preserve">
+
+<!-- ANIMATE in COMBO2  error?
+-->
+
+<rect x="10" y="10" width="40" height="20"
+     style="stroke: #000000; fill: none;">
+    <animateTransform attributeName="transform" attributeType="XML"
+                      type="scale"
+                      from="1" to="3"
+                      begin="0s" dur="10s"
+                      repeatCount="indefinite"
+                      additive="sum"
+            />
+    <animateTransform attributeName="transform" attributeType="XML"
+                      type="rotate"
+                      from="0 30 20" to="360 30 20"
+                      begin="0s" dur="10s"
+                      fill="freeze"
+                      repeatCount="indefinite"
+                      additive="sum" /> 
+</rect>
+</svg>

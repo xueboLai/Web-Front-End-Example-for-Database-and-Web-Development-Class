@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="200"  xml:space="preserve">
+
+<!--
+ The radius of the arc is set by the two first parameters set on the A command. 
+ The first parameter is rx (radius in x-direction) 
+ and the second is ry (radius in y-direction). 
+ Setting rx and ry to the same value will result in a circular arc. 
+ Setting rx and ry to different values will result in an elliptical arc. 
+ 
+
+The third parameter set on the A command is the x-axis-rotation. 
+This sets the rotation of the arc's x-axis compared to the normal x-axis. 
+Most of the time you will not need to change this parameter.
+
+The fourth and fifth parameters are the large-arc-flag 
+and sweep-flag parameters. 
+The large-arc-flag determines whether to draw the smaller or bigger arc 
+satisfying the start point, end point and rx and ry
+
+-->
+    <path d="M40,20  A30,30 0 0,0 70,70"
+    style="stroke: #cccc00; stroke-width:2; fill:none;"/>
+
+
+<path d="M40,20  A30,30 0 1,0 70,70"
+    style="stroke: #ff0000; stroke-width:2; fill:none;"/>
+
+
+<path d="M40,20  A30,30 0 1,1 70,70"
+    style="stroke: #00ff00; stroke-width:2; fill:none;"/>
+
+<path d="M40,20  A30,30 0 0,1 70,70"
+    style="stroke: #0000ff; stroke-width:2; fill:none;"/>
+
+</svg>

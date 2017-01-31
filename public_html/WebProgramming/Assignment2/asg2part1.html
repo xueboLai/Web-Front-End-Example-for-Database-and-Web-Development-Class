@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JAVA</title>
+<link rel="stylesheet" type="text/css" href="main.css">
+<script type = "text/javascript" src = "asg2part1.js">
+</script>
+</head>
+<body id = "body_part">
+<div id = "whole">
+
+<div style = "position:fixed;">
+<nav>	
+
+		<div class = "insideNav">
+		<a href = "../../index.html" id  = "firstElement">Home Page</a>
+		<a href = "../index.html" class = "navSelection">Home Page For Web Implementation</a>
+		<a href = "products/products.html" class = "navSelection">Assignemnt2 Part 2: Products</a>
+
+		</div><!--end of insideNav-->
+</nav><!--end of navigation bar-->
+</div>
+
+	
+	<div id = "main-part">
+
+	<header class = "header1">
+	<br><br><br>
+	<h1>Assignment 2 Part 1: Practice of JavaScript</h1>
+	</header>
+	<div id = "part1">
+	<br><br>
+	<header id = "header2">
+	<br>
+	<h1>1,Style application</h1>
+	<br><br>
+	<p id = "supposed_to_disappear">The default is lights on, if you hit lights off, it would (1)"turn" off the light, (2)change the background, (3)change the head, (4)change the button's color and (5)hide this paragraph.
+		After you hit lights on again, everything will be back to default.</p>
+	</header>
+	<figure>
+		<img src = "pic/light_bulb_on.png" id="light" alt = "light bulb" width="30px" height="22px">
+	</figure>
+	
+	<button id = "first" style="float:left; margin-left:39%;" type="button" onclick="lightBulb_on()">Lights On</button>
+	<button id = "second" type="button" onclick="lightBulb_off()">Lights Off</button>
+
+	<br><br>
+	<hr>
+	</div><!--end of part1-->
+	
+	<div id = "part2">
+	<header id = "header2">
+	<br>
+	<h1>2,Prize application:</h1>
+	<br><br>
+	<p id =  onclick = "swapT()">In order to see the prize, please click on "See the prize". And please click on the "Win the prize" to generate a random number and get a prize! I separate the question into two functions:randarray() and winPrize().</p>
+
+	<button id = "third" type="button" onclick="randarray()">See the prize</button>
+	<button id = "fourth" type="button" onclick="winPrize()">Win the prize</button>
+	<div><p id = "prize"></p></div>
+	</header>
+	
+	</div><!--end of part2-->
+	<br><br>
+	<hr>
+	
+	<div id = "part3">
+	<header id = "header2">
+	<br>
+	<h1>3,Swap paragraph:</h1>
+	<br><br>
+	<p id = "p1" onclick = "swapT()">Java is a general-purpose computer programming language that is concurrent, class-based, object-oriented, and specifically designed to have as few implementation dependencies as possible. It is intended to let application developers "write once, run anywhere" (WORA),meaning that compiled Java code can run on all platforms that support Java without the need for recompilation Java applications are typically compiled to bytecode that can run on any Java virtual machine (JVM) regardless of computer architecture. As of 2016, Java is one of the most popular programming languages in use, particularly for client-server web applications, with a reported 9 million developers.</p>
+	<p id = "p2" onclick = "swapT()">C++ (pronounced cee plus plus, is a general-purpose programming language. It has imperative, object-oriented and generic programming features, while also providing facilities for low-level memory manipulation. It was designed with a bias toward system programming and embedded, resource-constrained and large systems, with performance, efficiency and flexibility of use as its design highlights. C++ has also been found useful in many other contexts, with key strengths being software infrastructure and resource-constrained applications, including desktop applications, servers (e.g. e-commerce, web search or SQL servers), and performance-critical applications (e.g. telephone switches or space probes).[6] C++ is a compiled language, with implementations of it available on many platforms and provided by various organizations, including the Free Software Foundation (FSF's GCC), LLVM, Microsoft, Intel and IBM.</p>
+	<div><p id = "prize"></p></div>
+	</header>
+	
+	</div><!--end of part3-->
+	
+	<div id = "part4></div>
+	<div id = "part4>
+	<header id = "header2">
+	<br>
+	<h1>4,Swap image:</h1>
+		</header>
+	<p>Please click on the imges to swap them!</p>
+	<br><br>
+	<figure>
+		<div id="img1" ><img src = "pic/bear1.jpg"  id = "im1" onclick = "swapI()" alt = "There should be a bear here" width="30px" height="22px"></img></div>
+		<div id="img2" ><img src = "pic/bear2.jpeg"  id = "im2" onclick = "swapI()"> <!--style = "float:right;"-- alt = "There should be a bear here" width="30px" height="22px">--></div>
+	</figure>
+	<br><br><hr>
+	</div><!--end of part4-->
+	
+	
+	<div id = "part5">
+	<header id = "header2">
+	<br>
+	<h1>5. Generate a New Document Application:</h1>
+	
+
+		<img id="i4" src = "pic/spider.jpg"  onclick = "newdoc()" style = "margin-right:40%;"  alt = "There should be a bear here" width="45" height="30">	</figure>
+
+	</header>
+	</div><!--end of part5-->
+	
+		<div id = "part6">
+	
+		<header id = "header2">
+	<br>
+	<h1>6. Birthday Application:</h1>
+	
+		<form>
+		Enter the first person's name:
+		<input id= "name1">
+		Enter his or her birthday
+		<input type="date" id="bday1" max="2016-12-31"><br>
+		Enter the first person's name:
+		<input id= "name2">
+		Enter his or her birthday
+		<input type="date" id="bday2" max="2016-12-31"><br>
+
+		<button id = "b1" type="button" onclick="BdayApp()">Submit</button>
+		</form>
+		<p id = "bdayOutput"></p>
+		
+		
+	</header>
+	</div>
+	
+	</div><!--end of main_part-->
+	
+
+
+
+	
+</div><!--end of whole-->
+</body>
+</html>

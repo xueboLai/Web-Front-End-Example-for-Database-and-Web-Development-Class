@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>assignment6 Part1-3</title>
+<link rel="stylesheet" type="text/css" href="main.css">
+<script type = "text/javascript" src = "cart.js">
+</script>
+</head>
+<body id = "body_part">
+<div id = "whole">
+
+<div style = "position:fixed;">
+<nav>	
+
+		<div class = "insideNav">
+		<a href = "../../index.html" id  = "firstElement">Home Page</a>
+		<a href = "../index.html" class = "navSelection">Home Page For Web Implementation</a>
+		<a href = "quiz.php" class = "navSelection">Assignemnt6 Part4</a>
+
+		</div><!--end of insideNav-->
+</nav><!--end of navigation bar-->
+</div>
+
+	
+	<div id = "main-part">
+
+	<header class = "header1">
+	<br><br><br>
+	<h1>Assignment6</h1>
+	</header>
+	<hr><br><hr>
+	<header id = "header2">
+	<br>
+	<h1>part 1, Mad Libs Application </h1>
+	<!--<p style = "text-align:center;">Select checkout when you finished</p>-->
+	<br>
+	<br>
+	</header>
+
+	<div class = "formApp">
+	<form name = "story" id = "story" style= "text-align:center;line-height:300%" action = "madlib.php" method = "post">
+
+
+	Enter an adjective<input type = "text" name = "adjective1"><br>
+	Enter another adjective<input type = "text" name = "adjective2" ><br>
+	Enter a noun<input type = "text" name = "noun1" ><br>
+	Enter another noun<input type = "text" name = "noun2" ><br>
+	Enter the third noun<input type = "text" name = "noun3" ><br>
+	Enter a verb<input type = "text" name = "verb1" ><br>
+	Enter another verb<input type = "text" name = "verb2"><br>
+	Enter a number <input type = "number" name = "num">
+	<br>
+
+	<input type = "submit" value = "submit">
+	</form>
+	<hr>
+	<br><br>
+		<header id = "header2">
+	<h1>part 2, Calculator</h1>
+	<!--<p style = "text-align:center;">Select checkout when you finished</p>-->
+	<br>
+	</header>
+	<form name = "calculator" id = "calculator" style= "text-align:center;line-height:300%" action = "add.php" method = "get">
+	Enter first number<input type = "text" name = "num1"><br>
+	Enter second number<input type = "text" name = "num2"><br>
+	Select an operator: 
+	<select name = "operator">
+		<option value = "+">+</option>
+		<option value = "-">-</option>
+		<option value = "*">*</option>
+		<option value = "/">/</option>
+	</select>
+	<br>
+	<input type = "reset" value = "reset">
+	<input type = "submit" value = "submit">
+	</form>
+	
+	
+		<hr>
+	<br><br>
+		<header id = "header2">
+	<h1>part 3,Online shop</h1>
+
+	<h2>Ice Cream Shop<h2>
+	<!--<p style = "text-align:center;">Select checkout when you finished</p>-->
+	</header>
+	<form name = "calculator" id = "calculator" style= "text-align:center;line-height:300%" action = "receipt.php" method = "get">
+	Name<input type = "text" name = "name"><br>
+	email<input type = "email" name = "email"><br>
+	type of ice cream:<select name = "ice">
+		<option value = "vanilla">vanilla ice cream</option>
+		<option value = "chocolate">chocolate ice cream</option>
+	</select>
+	<br>
+	Quantity of ice cream<input type = "number" name = "quantity" value = 1>
+	<br>
+	<input type = "reset" value = "reset">
+	<input type = "submit" value = "submit">
+	</form>
+	
+			<hr>
+	<br><br>
+
+	
+	
+	
+	</div>
+	<header id = "header2">
+	<h3><a id = "click" href = "quiz.php" color = "black;">part 4, Quiz application (Please click here to enter the quiz application)</a></h3>
+	<!--<p style = "text-align:center;">Select checkout when you finished</p>-->
+	<br>
+	</header>
+	
+
+
+
+	<br><br>
+	<hr>
+
+	
+
+
+
+	
+</div><!--end of whole-->
+<script type = "text/javascript" src = "cart.js">
+</script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="200"  xml:space="preserve">
+
+<!--
+ You can combine the path commands inside the same <path> element.
+ 
+ z doesn't work correctly in all browsers
+-->
+<path d="M100,100
+         L150,100
+         a50,25 0 0,0 150,100
+         q50,-50 70,-170 z"
+      style="stroke: #006666; fill: red;"/>
+
+</svg>

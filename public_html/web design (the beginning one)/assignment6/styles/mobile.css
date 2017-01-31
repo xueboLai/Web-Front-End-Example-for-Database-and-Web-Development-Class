@@ -1,0 +1,85 @@
+body{background-image: url(../pics/homepage/monster_hunter1.jpg); 
+	background-repeat:repeat-y;
+	}
+	
+	
+div.container {
+	width: 90%;
+	height:2100px;
+
+	max-width: 1300px;
+	margin: auto;
+	}
+	
+ul{	
+	list-style:none;
+	margin-left:0;
+	padding-left:0;
+
+	}
+li{
+	float:left;
+	font-size:15px;
+	margin:2% 6%;}
+	
+a:hover{
+	color:FBEE9A;
+	text-decoration: none;
+	}
+
+a:visited{color:black;
+		text-decoration: none;}
+a{color:black;
+		text-decoration: none;}
+		
+.navigation{height:100px;}
+.subtitle{font-family:Arial, Helvetica, sans-serif;margin-left:100;margin-right:100;font-size:22; color = "#FFFFFF";/*background-color:#A33513;*/ margin-bottom:0px; }
+.container{font-family:Arial, Helvetica, sans-serif;
+			margin-left:150px;margin-right:150px;
+			background-color:#DAD1CF;}
+h2{ font-family: "Times New Roman", Times, serif;text-align: center;}
+div.img1 {
+
+    margin:0%,20%,3%,10%;
+    border: 1px solid #ccc;
+    float: left;
+    width: 80%;
+	
+	padding:3% ;
+}
+img {
+    margin: 0px;
+    width: 100%;
+	
+}
+p,ul,or{
+	color:black;
+	font-family:Palatino,Times,serif;
+	font-size:15px;
+	line0-height:1.4em;
+	text-align:left;
+	text-align:justify;
+	}
+div.col1{
+float:left;
+margin-left:2%;
+margin-right:2%;
+width:94%;
+}
+div.col2{
+float:left;
+margin-right:2%;
+width:94%;
+}
+div.col3{
+float:left;
+margin-right:2%;
+width:94%;
+}
+div.col4{
+float:left;
+margin-right:2%;
+width:94%;
+}
+div.footer{ margin-bottom:2%;float:right;}
+div.back{margin-bottom:3%; float:left;}

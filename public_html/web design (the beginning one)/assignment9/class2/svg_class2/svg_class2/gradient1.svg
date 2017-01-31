@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" 
+xmlns:xlink="http://www.w3.org/1999/xlink" 
+width="300" height="300"  xml:space="preserve">
+
+<!--
+ id 	A unique ID used to reference this gradient definition from shapes.
+x1, y1 	The x1 and y1 (starting point) of the vector defining the direction 
+     of the gradient. Specified as percentages (%) of x1,y1 and x2,y2 
+     of the shape the gradient is applied to. 
+     (Note: You should be able to use absolute numbers, 
+     but this doesn't seem to work in the browsers).
+     
+x2, y2 	The x2 and y2 (end point) of the vector defining the direction of the gradient.
+
+spreadMethod 	This value defines how the gradient is spread out through the shape. 
+There are 3 possible values: pad, repeat, and reflect. 
+'pad' means that the first/last color of the gradient is padded (spread out) 
+before and after the gradient. 
+''repeat' means that the gradient is repeated throughout the shape. 
+'reflect' means that gradient is mirrored in the shape. 
+The spread method is only relevant if the gradient does not fill out the shape 
+completely (see offset attributes of the <stop> elements).
+
+gradientTransform 	You can transform (e.g. rotate) the gradient before it is applied. 
+See SVG Transformation for more details.
+gradientUnits 	Sets whether you want to use the viewbox ('userSpaceOnUse') 
+or the the shape the gradient is applied to, for the calculation of x1, y1 and x2,y2.
+xlink:href 	An id of another gradient from which this gradient should 'inherit' its attributes. In other words, for any attribute the attribute value of the referenced gradient will be the default value of this gradient, if no attribute value is set in this gradient. 
+
+
+ Here is a list of the <stop> element attributes:
+Attribute 	Description
+offset 	How far into the shape this color starts 
+   (if the first color of the gradient) or stops (if the last color of the gradient). 
+   Specified as percentages of the shape (really the gradient vector) the gradient 
+   is applied to. For instance, 10% means that the color should start / stop 10% 
+   into the shape.
+stop-color 	The color of this stop-point. The color the gradient changes from / to.
+stop-opacity 	The opacity of the color of this stop-point. 
+   If opacity changes from one stop-point with 1 to another stop-point with opacity 0, 
+   then the color will gradually become more and more transparent. 
+
+-->
+
+
+  <defs>
+    <linearGradient id="myLinearGradient1"
+                    x1="0%" y1="0%"
+                    x2="0%" y2="100%"
+                    spreadMethod="pad">
+      <stop offset="0%"   stop-color="#00cc00" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#ff0000" stop-opacity="1"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="10" y="10" width="75" height="100" rx="10" ry="10"
+     style="fill:url(#myLinearGradient1);
+            stroke: #005000;
+            stroke-width: 3;" />
+
+
+
+
+</svg>

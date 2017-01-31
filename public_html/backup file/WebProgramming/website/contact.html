@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Contact Me</title>
+<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+<div id = "whole">
+
+<div style = "position:fixed;">
+<nav>	
+
+		<div class = "insideNav">
+		<a href = "index.html" id  = "firstElement">JAVA</a>
+		<a href = "C.html" class = "navSelection">C++</a>
+		<a href = "python.html" class = "navSelection">Python</a>
+		<a href = "pl.html" class = "navSelection">Programming Language</a>
+		<a href = "contact.html" class = "navSelection">Contact Me</a>
+		</div><!--end of insideNav-->
+</nav><!--end of navigation bar-->
+</div>
+
+
+
+	
+	<div class = "main-part">
+	<div class = "head1">
+	<embed src="songs.mp3" autostart="TRUE" hidden="TRUE"></embed>
+	<header></header>
+	<h1>Contact me</h1>
+	</header>
+	</div><!--end of head1-->
+	<div id = "left" class = "col-2" >
+	<ul class = "left-nav">
+		<a href = "index.html" class = "trial"><li class = "leftH">JAVA</li></a>
+		<a href = "C.html" class = "trial"><li class = "leftH">C++</li></a>
+		<a href = "python.html" class = "trial"><li class = "leftH">Python</li></a>
+		<a href = "pl.html" class = "trial"><li class = "leftH">Programin Lang</li></a>
+		<a href = "contact.html" class = "trial"><li class = "leftH">Contact Me</li></a>
+		
+	</ul>
+	</div><!--end of left_nav-->
+	
+	<div id = "right" class = "col-7" style = "background-color:transparent;">
+
+	
+	<form class = "abc" action="a.php">
+	<fieldset>
+	<legend>Question about your preference in Programming Lanuage</legend>
+	<label for = "fName">Your First Name:</label><br>
+	<input type = "text" name = "fName" value = "Please enter your first name"><br>
+	
+	<label for = "LName">Your Last Name:</label><br>
+	<input type = "text" name = "LName" value = "Please enter your last name"><br>
+	
+	<h3>Please select your gender</h3>
+	 <input type="radio"  value="b" name="gender"> boy<br>
+     <input type="radio"  value="g" name="gender"> girl<br>
+     <input type="radio"  value="o" name="gender"> other<br>
+	
+	<h3>How many cs language do you know?</h3>
+	<input type="checkbox" name="langN" value="zero"checked> 0<br>
+   <input type="checkbox" name="langN" value="one" > 1<br>
+   <input type="checkbox" name="langN" value="two" > 2<br>
+   <input type="checkbox" name="langN" value="three" > 3<br>
+   <input type="checkbox" name="langN" value="three" > more than 3<br>
+	
+	<h3>Please choose the language you like</h3>
+	<select name = "lang">
+    <option value = "py">Python</option>
+    <option value = "C">c++</option>
+    <option value = "Java">Java</option>
+	<option value = "other">Other</option>
+    </select>
+	<br>
+	<br>
+	
+	 <textarea name="supplememnt" cols="20" rows="20" >If you choose other, please specify the language your like</textarea>
+	 <br>
+	<label for = "email">Please enter your email: </label><input type="email" name="email"><br>
+	
+	
+	<h3>Please enter the date of your submission</h3>
+	<input type="date" name="submiday" min="2015-01-01"><br>
+	<h3>There is a algorithm cometition about to begin, select a color represents yourself and participate in the race!<h3>
+  <input type="color" name="color" value="#000000">
+  </fieldset>
+  
+  
+  <br>
+    Rate the quality of this form (10 is highest,0 is lowest)
+  <input type="number" name="satisfaction" min="0" max="10"><br>
+  <br><br>
+	<button type="button" onclick="alert('Please check really careful if all the information is correct. If all info is correct, please click sumbit')">Finished?</button>
+
+	<input type="submit" value="Submit">
+</form>
+
+
+	</div><!--end of right_nav-->
+	
+	
+	
+	
+
+
+</div><!--end of whole-->
+</body>
+</html>

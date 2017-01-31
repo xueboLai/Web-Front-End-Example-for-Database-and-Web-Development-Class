@@ -1,0 +1,127 @@
+
+		
+#body_part{
+		background-image:url("pic/grass.jpg");}
+		
+		
+
+
+
+
+
+nav{		
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		width:100%;
+		height:6%;
+		background-color:black;
+
+		}
+div.insideNav{
+		color:white;
+		font-family:"Times New Roman", Georgia, Serif;
+		font-size:1.6em;
+		line-height:1.5em;
+		}
+.navSelection{
+		color:#bdbbaf;
+		margin-left:5%;
+		}
+.header1{
+
+		text-align:center;
+		font-size:30px;
+		color:#FDCF53;
+		width:100%;
+		}
+#header2{
+
+		text-align:center;
+		font-size:20px;
+		color:#db7a04;
+		width:100%;
+		}
+		
+p{	
+	margin-left:10%;
+	margin-right:10%;
+	color:#474542;
+	font-size:20px;
+	line-height:1.6em;
+	text-align:justify;
+
+}
+p.introduction{
+		text-align:center;
+}
+#firstElement{
+		color:#bdbbaf;
+		margin-left:23%;
+		}
+#firstElement:hover   {color:white; background-color:transparent; text-decoration:none;}
+.navSelection:hover   {color:white; background-color:transparent; text-decoration:none;}
+#firstElement:link   {text-decoration:none;}
+.navSelection:link   {text-decoration:none;}
+
+
+a:visited {color:white; background-color:transparent; text-decoration:none;}
+
+a:active  {color:white; background-color:transparent; text-decoration:none;}
+
+#main-part{
+		/*height:2070px;*/
+		box-sizing: border-box;
+		margin-left:10%;
+		margin-right:10%;
+		background-color:#FFFFFF;
+		/*need to get rid of*/
+		border-style: solid;
+		border-width: 1px;
+		color:black;
+		font-family:"Times New Roman", Georgia, Serif;
+/*		font-size:1.6em;
+		line-height:1.5em;*/
+		}
+
+
+.leftH:link {color:white; text-decoration:none}
+.leftH:hover {color:white; background-color:#52B226; text-decoration:none;}
+a.trial:link    {color:white;  text-decoration:none;margin-top:15px;}
+a.trial:hover   {color:white; background-color:#52B226; text-decoration:none;margin-top:15px;}
+
+img{	    
+	/*display: block;*/
+    margin-left: auto;
+    margin-right: auto;
+
+	/*width:30%;
+	height:30%;*/}
+#subtitle3{
+		text-align:center;
+		color:brown;
+		font-size:100%;
+		width:100%;
+}
+#bdayOutput{
+	color:#474542;
+	font-size:20px;
+	line-height:1.6em;
+	text-align:justify;
+	text-align:center;
+}
+#output1{
+	margin-left:10%;
+	margin-right:10%;
+	color:#474542;
+	font-size:20px;
+	line-height:1.6em;
+	text-align:justify;
+	text-align:center;
+}
+
+
+
+
+		

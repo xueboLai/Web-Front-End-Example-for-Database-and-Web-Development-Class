@@ -1,0 +1,4 @@
+AuthType Basic
+AuthUserFile /home/xl1638/public_html/database/homework7/.htpasswd
+AuthName "Members ONLY"
+require valid-user

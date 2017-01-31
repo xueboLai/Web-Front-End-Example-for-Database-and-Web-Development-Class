@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" 
+xmlns:xlink="http://www.w3.org/1999/xlink" 
+width="300" height="200"  xml:space="preserve">
+
+<!-- ANIMATE COLOR (only in safari)
+The <animateColor> attribute works on the color of a shape instead 
+of its position or dimensions. You cannot animate colors with the <animate> element. 
+You can only do so using the <animateColor> element.  
+ 
+-->
+
+<circle cx="30" cy="30" r="25" style="stroke: none; fill: #0000ff;">
+    <animateColor attributeName="fill"
+                  from="#0000ff"  to="#ff0000"
+                  begin="0s" dur="2s"
+                  fill="freeze" repeatCount="indefinite"/>
+
+</circle>
+
+
+
+</svg>

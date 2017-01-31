@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" 
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" 
+       xmlns:xlink="http://www.w3.org/1999/xlink" 
+       width="350" height="350"  
+       xml:space="preserve">
+      
+ <rect x="5" y="50" width="250" height="100"
+        fill="#ffff00" stroke="blue" stroke-width="10" /> 
+      
+<text x="10" y="100"
+      style="font-family: Helvetica;
+             font-size: 42;
+             stroke:  #000000;
+             fill:    #00cc00;  "   >I Love SVG!</text>
+             
+ 
+      
+</svg>

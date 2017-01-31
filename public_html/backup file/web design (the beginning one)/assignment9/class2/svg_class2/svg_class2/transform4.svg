@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" 
+xmlns:xlink="http://www.w3.org/1999/xlink" 
+width="300" height="300"  xml:space="preserve">
+
+<!--
+  The scale() function scales a shape up or down in size. 
+  The scale() function scales both the shapes dimensions and its position coordinates. 
+  Thus, a rectangle positioned at 10,10 with a width of 20 and a height of 30, 
+  scaled by a factor of 2 will appear at 20,20 with a width of 40 and a height of 60.
+
+The scale() function also scales the stroke width of a shape.
+
+Here is an example that shows a rectangle (blue) positioned at 10,0 
+with a width of 20 and a height of 20, and an equal rectangle (black) 
+which is scaled by a factor of 2: 
+-->
+
+
+<rect x="10" y="10" width="20" height="30"
+      style="stroke: #3333cc; fill:none;" />
+
+<rect x="10" y="10" width="20" height="30"
+      style="stroke: #000000; fill:none;"
+      transform="scale(2)" />
+
+
+</svg>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" 
+xmlns:xlink="http://www.w3.org/1999/xlink" 
+width="500" height="200"  xml:space="preserve">
+
+<!-- ANIMATE in COMBO
+-->
+
+<rect x="10" y="10" width="40" height="20"
+     style="stroke: #000000; fill: none;">
+   <animate attributeName="x"
+            attributeType="XML"
+            from="10" to="400"
+            begin="0s" dur="4s"
+            repeatCount="indefinite"
+           />
+   <animate attributeName="y"
+            attributeType="XML"
+            from="10" to="100"
+            begin="0s" dur="4s"
+            fill="freeze"
+            repeatCount="indefinite"
+           />
+</rect>     
+
+
+</svg>

@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<title> Xuebo Lai 	
+		</title>
+	<head>
+
+	<body>
+		<p>
+			<ul>
+				<li>HTML</li>
+				<li>CSS</li>
+				<li>Photoshop</li>
+				<li>Wireframing</li>
+				<li>Responsive Website</li>
+				<li>Animation</li>
+				<li>Bootstrap</li>
+				<li>SVG</li>
+			<ul>
+		</p>
+	</body>
+
+</html>

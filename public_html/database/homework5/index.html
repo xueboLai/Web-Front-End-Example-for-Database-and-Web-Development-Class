@@ -1,0 +1,131 @@
+ <!DOCTYPE html>
+
+<html lang="en">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+	<title>Assignment5</title>
+	<head>
+
+    <link rel="icon" href="http://getbootstrap.com/favicon.ico">
+
+
+
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+   
+    <link href="css/custom.css" rel="stylesheet">
+
+
+
+	<script src="js/jquery-3.1.0.min.js"></script>
+
+
+	
+	<script src="js/jquery-3.1.0.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+
+	
+	
+	
+  </head>
+
+
+
+
+ <body background="pics/data.jpg">
+	<!--start of nav-->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+		  <a class="navbar-brand" href="../index.html">Home Page</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Database Design and Web Implementation</a></li>
+            <li><a href="">Web Development and Programming</a></li>
+			<li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Taken CS courses <span class="caret"></span></a>
+                  <ul class="dropdown-menu dropdowninside">
+                    <li><a href="Python.html">Python:Intro to Prog</a></li>
+                    <li><a href="JAVA.html">JAVA:Object-oriented Prog</a></li>
+					<li><a href="C++.html">C++:Object-oriented Prog </a></li>
+                   
+                  </ul>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+	<!--end of nav-->
+		</div>
+		
+		
+	<div class = "contain">
+	
+	<!--informtion about position-->
+		<ol class="breadcrumb ">
+			<li class = "pos"><a href="../../index.html">Home</a></li>
+			<li class="active"><a href = "../">CSCI-UA.60-1</a></li>
+			<li>assignment2</li>
+		</ol>
+	<!--information about position-->
+
+		
+
+		
+			<h1>Assignment5</h1>
+			<br>
+			<h2 class = "subtext1" style = "text-align:center;">Specification of LAMP Project </h2>
+			
+					<figure>
+						<img src = "pics/e-r diagram.png" id="p1" alt = "flies" width="200px" height="160px">
+					</figure>
+				
+					<p style = "text-align:justify;">The system(database) I want to build is for a real estate company’s selling department, assuming that there is a real estate company that has agents, information about housing and business across multiple countries. The goal is to make the selling department within a real estate company to store customers’ information much more efficiently and smoothly. Meanwhile, the system is also aiming to increase the working speed to the selling department. </p>
+					<p style = "text-align:justify;">There are mainly three kinds of user dealing with the system: clients (including both buyer and seller), employees (real estate agents), supervisors (including accountants and company manager). Hence, we have mainly three types of user interface as well: the clients’ side interface (take in clients’ information no matter their properties or their personal information), employee interface (allow employee to find information about clients, update and manipulate properties’ and clients’ data), supervisor interface (allow directors, managers, and accountants to access all the transactions). There is one more type of interface for boss. This kind of interface has the highest priority of the system and can update all the tables and access all the information, but the users number of this interface should be carefully restricted. Because we only consider the database and system for selling department in real estate company, the last type interface and dataset will not be taken in account in this design. In this design, authentication level should be clients<employees<managers (as well as accountants) in ascending order. </p>
+					<p style = "text-align:justify;">The data validation of this design will happen every month, because, we need to get rid of the data no longer of any use (for example, a property that hasn’t been updated information about it for ten years, an employee who left company 3 months ago but still has access to the system.) Also, the system should automatically send out promotion email once a month, use the cookies of in client’s side computer to determine which kind of housing should be included in the promotion email. </p>
+					<p style = "text-align:justify;">The data source for this table should mainly come from open data of properties, and the input of clients and the update information gathered by employees. And the size of data from all sources is specified in the following technology specification. Also, the design need to be mindful that all the data about clients and some of the data of properties should be encrypted because of the privacy issue. (Kind of like business rules but the encryption of those files is certainly security requirement). As discussed before, the data entries are from three kinds of user interface (3 data entries screens). All the entered information is sorted by php first and then passed into database so we don’t need extra programs to scour the data. </p>
+					<p style = "text-align:justify;">The system should be running in the a sever. All the user interfaces will be in the format of html webpages. They will be in a single folder ( public_html ) with permission 644 to be accessed by all users. All the database and dataset will be placed in in the folder parallel to public_html folder that is not accessible by users. The software requirement is as follow. The database will be used and controlled by mysql. The user interfaces would be represented by web pages. PHP files are written as a bridge to link the html pages and extract values from them to the back-end, database. Also, the database needs to store many pictures since for each property, the demonstrate by picture is very necessary. The design needs to consider about text input and images storage due to that the design is heavily based on those two elements. For hardware requirement, few computers are more than enough to monitor and keep the system running. Since this design is for long term big company to store employees’ and clients’ information, the storage has at least to be 10 TB. For this design, only the clients’ interface will be used on Mobile devices; the other two interfaces will be only used on computer or laptop to ensure working efficiency of employees. The backup of system should be performed every month and the new data should override the old version data. A mobile hard disk drive of 20 TB will be enough for the backup. Below is the details about each table and how we should construct each tables. </p>
+					<p style = "text-align:justify;">There are mainly 7 tables we need to create to achieve our goal: employees table, manager-employees table, working location table, properties(housing) tables, transactions table, client table, contact table. </p>
+					<p style = "text-align:justify;">
+					<h3 style = "text-align:center;">1, Employees table (user name as primary key): </h3>
+					<p style = "text-align:justify;">There are ten fields inside the employee table: first name, last name, user name, email address, work place, phone number, position, number of deals achieved in a month, date of start working, date of quit the job. Each employee for the company has first name and last name. When a new employee enters company, he or she needs to create a new account user name in the design system. Because the account user name can’t be the same, user name will be used as a primary key to identify each employee. All employees must provide at least one email address and phone number. They will be assigned to a work location. (The assumption of this design is that we have a huge company with office spreading across the country and world.) Since the work location is too long and occupies more than one field, we will make it into a new table. The work location in this table is a number served as a foreign key identifying a specific address in the work location table. The position field can be either manager and regular employee. The start date specifies the date of an employee starts working. The end date suggests the date the employee leave the position. Number of deals manifests the number of deals an employee achieve in month. At the beginning of each month, the number of deals will be set to zero. <br>
+					<h3 style = "text-align:center;">2, Manager-employees table:</h3>
+					 <p style = "text-align:justify;">This table specifies the relation between employees (we have two types of employees in employees’ table, one is manager, the other is regular employee. ) Each employee has one managers. One manager can have multiple regular employee working for him or her. This table is simple and has only two fields: mangers’ account user name and employees’ user name both as foreign keys identifying the records in the employees table. <br>
+					<h3 style = "text-align:center;">3, offices table (a surrogate key as primary key):</h3>
+					<p style = "text-align:justify;">Each record in this table specifies an office location of this company. There are 6 fields in this table. One field is surrogate key used as a primary key to identify each address. The rest 5 fields are zip code, country, state, city, and street which are used to locate an address precisely. <br>
+					<h3 style = "text-align:center;">4, Properties table (surrogate key as primary key):</h3>
+					<p style = "text-align:justify;">This table is about all the housing information available to the company. There are 13 fields in his table. One field is surrogate key used as a primary key to identify each address. Five fields are zip code, country, state, city, and street which are used to locate an address precisely. 7th field is the area of properties. 8th field is the number of bedrooms. 9th field is total room number. 10th field is the public transportation closed to the property. 11st field is the type of this property (whether is for renting or for sale), 12nd  field is the status of this housing, showing whether the property is still available. 13rd is the price of this property (if it’s for rent, the price of property is per month, if for sale, sale price.)<br>
+					<h3 style = "text-align:center;">5, clients table (user name as primary key): </h3>
+					<p style = "text-align:justify;">There are seven fields inside the client table. Every record in the client table has all the information related to a client: first name, last name, phone number, email address, description text of the clients, and clients’ preference. Also, when a client use this system for the first time, he or she will be asked to create a user name. The user name for client serves as a primary key. <br>
+					<h3 style = "text-align:center;">6, transactions table (surrogate key as primary key):</h3>
+					<p style = "text-align:justify;">This table has a surrogate key as primary key to uniquely identifies each transaction. Also, in this table, sells’, buyers’ and real estate agents’ (employees’ ) user names are used as foreign key. There are still fields about price, tax rate, transaction time, and commission rate. In total, there are 8 fields. <br>
+					<h3 style = "text-align:center;">7, contacts records table (surrogate key as primary key):</h3>
+					<p style = "text-align:justify;">Assume every employee in the company must make 100 phone calls every single day to promote properties. This table is used to help employees put down useful information for each phone call they made. (This table can also help to make sure each employee does make 100 phone calls every day.) Each record is a phone call from an employee to a client. There are 6 fields: surrogate key as primary key, the user name of the employee, the client’s username, the time of this promotion happens, text description about this contact, properties that is promoted.<br>
+					
+					<br><br><br><br>
+					</p>
+
+
+	<div class="col-md-1 header" >
+	</div>	
+	</div>
+	<!--end of header-->
+	
+	<!--start of assignment-->
+
+	
+
+	
+	</html>

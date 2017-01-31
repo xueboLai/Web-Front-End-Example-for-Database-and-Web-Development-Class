@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" 
+xmlns:xlink="http://www.w3.org/1999/xlink" 
+width="300" height="200"  xml:space="preserve">
+
+<!-- SET
+  Notice the <set> element nested inside the circle element. 
+  This is how the <set> element is applied to a shape - 
+  by nesting it inside the SVG element of the shape you want to apply it to.
+
+The <set> element sets the value of an attribute at a certain time. 
+The name of the attribute to set is specified inside the attributeName attribute. 
+The value to set it to is specified inside the to attribute. 
+The time to set the attribute value is specified inside the begin attribute. 
+ 
+-->
+
+    <circle cx="30" cy="30" r="25" style="stroke: none; fill: #0000ff;">
+    <set attributeName="r" attributeType="XML"
+         to="100"
+         begin="2s"  />
+
+    </circle>
+
+
+
+</svg>

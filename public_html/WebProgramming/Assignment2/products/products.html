@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>assignment Part2</title>
+<link rel="stylesheet" type="text/css" href="main.css">
+<script type = "text/javascript" src = "cart.js">
+</script>
+</head>
+<body id = "body_part">
+<div id = "whole">
+
+<div style = "position:fixed;">
+<nav>	
+
+		<div class = "insideNav">
+		<a href = "../../index.html" id  = "firstElement">Home Page</a>
+		<a href = "../index.html" class = "navSelection">Home Page For Web Implementation</a>
+		<a href = "asg2part1.html" class = "navSelection">Assignemnt2 Part 1</a>
+
+		</div><!--end of insideNav-->
+</nav><!--end of navigation bar-->
+</div>
+
+	
+	<div id = "main-part">
+
+	<header class = "header1">
+	<br><br><br>
+	<h1>Assignment 2 Part 2: Shopping Cart</h1>
+	</header>
+	<hr><br><hr>
+	<header id = "header2">
+	<br>
+	<h1>Please select the robotic toys you like</h1>
+	<p style = "text-align:center;">Select checkout when you finished</p>
+	<br>
+	<hr>
+	<br>
+	</header>
+	<div id = "part1">
+	<br><br>
+	<p style = "text-align:center;">Autel Robotics X-Star Drone with 4K Camera & Wi-Fi HD Live View (Orange)</p>
+	<figure>
+		<img src = "pic/drone.jpg" id="drone" alt = "drone" width="30px" height="22px">
+	</figure>
+	<p style = "text-align:center;">
+	<ul style = "text-align:center;list-style-type:none">
+	<li>4K Ultra HD video camera with quick-release 3-axis gimbal stabilizer</li>
+	<li>HD Live View up to 0.62 miles away and autonomous flight modes via the free Starlink app for iOS or Android (mobile device sold separately)</li>
+	<li>Dual GPS/GLONASS outdoor navigation, SecureFlyTM magnetic interference protection, and the Starpoint Positioning SystemTM</li>
+	<li>Intuitive remote controller with LCD display and one-touch action buttons</li>
+	<li>Included accessories: 16-GB MicroSD card, intelligent battery, 1-hour fast charger, spare propellers and small parts</li>
+	<li>Backed by Autel Robotics customer support: U.S. based, seven days a week</li>
+	</ul>
+	</p>
+	<form name = "form1" id = "form1" style= "text-align:center">
+	price <input type = "number" name = "price1" id = "price1" value = "499.00" readonly>&nbsp;&nbsp;
+	Quantity ordered<input type = "number" name = "quantity1" id = "quantity1" value = "0" onchange = "total()">
+	&nbsp;&nbsp;SubTotal<input type = "number" name = "sub1" id = "sub1" value = "0" onchange = "total()" readonly>
+	<br>
+	<hr>
+	<br><br>
+	
+	
+	</form>
+	</div>
+	
+	<div id = "part2">
+	<br><br>
+
+	<p style = "text-align:center;">Autel Robotics X-Star Drone with 4K Camera & Wi-Fi HD Live View (Orange)</p>
+	<figure>
+		<img src = "pic/ball.jpg" id="ball" alt = "ball" width="30px" height="22px">
+	</figure>
+	<p style = "text-align:center;text-align:justify">
+	1,Dash is a real robot for children ages 8 and up that is responsive to its world; your child can bring it to life with our free apps available on iOS and Android. Dash comes with hundreds of exciting coding adventures and projects available in Wonder and Blockly apps.
+	<br>2,Use your Apple or Android smart phone or tablet to program Dash to move, dance, light up, make sounds, avoid obstacles, and even react to their voice. With the revolutionary free app Wonder, kids can program Dash to be the real robot pet, pal or sidekick of their dreams.
+	<br>3,No instructions needed! Our Wonder and Blockly apps feature built-in challenge tutorials that teach you how to program Dash from the very beginning of each program! Forget robot camp - you can easily learn Blockly and Wonder right in the app!
+	<br>4,Comes fully assembled, no batteries required. Comes with USB charging cable and two Building Brick Connectors
+	<br>5,Awards: 2015 National Parenting Gold, Time to Play Magazine 2015 Holiday Most Wanted List, Opening Minds Innovation for Schools, ISTE Best of Show for Schools
+	
+	</p>
+	<form name = "form2" id = "form2" style= "text-align:center">
+	price &nbsp;<input type = "number" name = "price2" id = "price2" value = "148.51" readonly>&nbsp;&nbsp;
+	Quantity ordered &nbsp;<input type = "number" name = "quantity2" id = "quantity2" value = "0" onchange = "total()">&nbsp;&nbsp;
+	SubTotal &nbsp;<input type = "number" name = "sub2" id = "sub2" value = "0" onchange = "total()" readonly>
+	<br>
+	<hr>
+	<br><br>
+	</form>
+	</div>
+	
+	<div class = "formApp">
+	<form name = "user" id = "user" onsubmit = "return receipt()" style= "text-align:center;line-height:300%" action = "#">
+	<h3 style = "text-align:center">Delivery method:<h3>
+	<label for="call">will-call pickup</label>
+	<input type="radio" name="delivery" id="call" value="call" checked onchange="shipping_price()"><br>
+	<label for="call">shipping</label>
+	<input type="radio" name="delivery" id="shipping" value="shipping" onchange="shipping_price()"><br>
+	shipping price<input type = "number" name = "shipping_result" id = "shipping_result" value=0 readonly>
+	<hr>
+	<fieldset>
+	<fieldset>
+	<legend>
+	user-information
+	</legend>
+	First Name<input type = "text" name = "Fname" id = "Fname">
+	Last Name<input type = "text" name = "Lname" id = "Lname">
+	&nbsp;
+	gender:
+	<select name = "gender">
+		<option value = "male" checked>male</option>
+		<option value = "female">female</option>
+		<option value = "other">other</option>
+	</select>
+	<br>
+	&nbsp;Phone Number<input type = "number" name = "phone" id = "phone" >
+	&nbsp;Email Address<input type = "text" name = "email" id = "email">
+	<br>
+	Street Address<input type = "text" name = "street" id = "street">
+	&nbsp; City<input type = "text" name = "city" id = "city">
+	&nbsp; State:<input type = "text" name="state" id = "state">
+	<br> zip code: <input type = "number" name="zip" id = "zip">
+	</fieldset>
+	<br>
+	<fieldset>
+	<legend>
+	Credit Card Information
+	</legend>
+	type:
+	<select name = "type">
+		<option value = "amex" checked>AMEX</option>
+		<option value = "visa">VISA</option>
+		<option value = "other">other</option>
+	</select>
+	&nbsp; Card Number<input type = "text" name = "cardnum" id = "cardnum">
+	&nbsp;Expiration Date<input type = "text" name = "date" id = "date">
+	<br>code:<input type = "text" name = "code" id = "code">
+	</fieldset>
+	Grand Total:<input type = "number" name = "total" id = "total" value=0 readonly>
+	<br>
+	<input type = "reset" id ="first" value = "reset">
+	<input type = "button" id = "first" value = "checkout" onclick = "receipt()">
+
+	</fieldset>
+	</form>
+	</div>
+	
+	<div id = "result" style = "text-align:center;">
+	
+	</div>
+	
+
+
+	<br><br>
+	<hr>
+
+	
+
+	</div><!--end of main_part-->
+	
+
+
+
+	
+</div><!--end of whole-->
+<script type = "text/javascript" src = "cart.js">
+</script>
+</body>
+</html>

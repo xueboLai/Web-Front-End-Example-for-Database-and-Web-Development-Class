@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" 
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" 
+       xmlns:xlink="http://www.w3.org/1999/xlink" 
+       width="150" height="150"  
+       xml:space="preserve">
+      
+  <circle fill="#F6EC13" stroke="red" 
+     stroke-width="4" cx="0" cy="0" r="50" />
+      
+</svg>
+
+ <line x1="10" y1="150"  
+       x2="250" y2="30"
+       
+       stroke-width="4"
+       stroke="#0088ff"   />
+      
